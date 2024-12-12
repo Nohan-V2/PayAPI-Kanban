@@ -41,15 +41,173 @@
       </nav>
     </header>
 
-    <section class="hero">
-      <img
-        class="phone-mockup"
-        src="./assets/home/desktop/illustration-phone-mockup.svg"
-        alt="phone with a notification of PayAPI"
-      />
+    <main>
+      <section class="hero">
+        <img
+          class="phone-mockup"
+          src="./assets/home/desktop/illustration-phone-mockup.svg"
+          alt="phone with a notification of PayAPI"
+        />
 
-      <article class="text-hero">
-        <h1>Start building with our APIs for absolutely free.</h1>
+        <article class="text-hero">
+          <h1>Start building with our APIs for absolutely free.</h1>
+
+          <form>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter email address"
+            />
+
+            <button class="buttons button-primary" type="submit">
+              Schedule a Demo
+            </button>
+          </form>
+          <p>
+            Have any questions?
+            <a class="form-help links" href="./pages/contact.html"
+              >Contact Us</a
+            >
+          </p>
+        </article>
+      </section>
+
+      <section class="parteners-container">
+        <div class="parteners-container-contain">
+          <div class="image-parteners">
+            <img src="./assets/shared/desktop/tesla.svg" alt="Logo Tesla" />
+
+            <img
+              src="./assets/shared/desktop/microsoft.svg"
+              alt="Logo Microsoft"
+            />
+
+            <img
+              src="./assets/shared/desktop/hewlett-packard.svg"
+              alt="Logo HP"
+            />
+
+            <img src="./assets/shared/desktop/oracle.svg" alt="Logo Oracle" />
+
+            <img src="./assets/shared/desktop/google.svg" alt="Logo Google" />
+
+            <img src="./assets/shared/desktop/nvidia.svg" alt="Logo Nvidia" />
+          </div>
+
+          <article class="text-parteners">
+            <h2>Who we work with</h2>
+
+            <p>
+              Today, millions of people around the world have successfully
+              connected their accounts to apps they love using our API. We
+              provide developers with the tools they need to create easy and
+              accessible experiences for their users.
+            </p>
+
+            <a class="buttons secondary-button-light" href="./pages/about.html"
+              >Learn more about us</a
+            >
+          </article>
+        </div>
+      </section>
+
+      <section class="features">
+        <section>
+          <img
+            class="image-terminal"
+            src="./assets/home/desktop/illustration-easy-to-implement.svg"
+            alt="code qui créer un formulaire"
+          />
+
+          <article class="text-features">
+            <h2>Easy to implement</h2>
+
+            <p>
+              Our API comes with just a few lines of code. You’ll be up and
+              running in no time. We built our documentation page to integrate
+              payments functionality with ease.
+            </p>
+          </article>
+        </section>
+
+        <section>
+          <div class="image-container">
+            <img
+              class="image-phone"
+              src="./assets/home/desktop/illustration-simple-ui-1.svg"
+              alt="iphone with PayAPI transaction totals"
+            />
+
+            <img
+              class="image-phone"
+              src="./assets/home/desktop/illustration-simple-ui-2.svg"
+              alt="iphone with notification of transactions made on PayAPI"
+            />
+          </div>
+
+          <article class="text-features">
+            <h2>Simple UI & UX</h2>
+
+            <p>
+              Our pre-built form is easy to integrate in your app or website’s
+              checkout flow and designed to optimize conversion.
+            </p>
+          </article>
+        </section>
+      </section>
+
+      <section class="avantages-container">
+        <ul>
+          <li>
+            <img
+              src="./assets/home/desktop/icon-personal-finances.svg"
+              alt="icon personal finances"
+            />
+
+            <h3 class="small-h3">Personal Finances</h3>
+
+            <p>
+              Consolidate financial data from multiple sources and categorize
+              transactions up to 2 years of history. Analyze reports to
+              reconcile activities in your account.
+            </p>
+          </li>
+
+          <li>
+            <img
+              src="./assets/home/desktop/icon-banking-and-coverage.svg"
+              alt="icon banking and coverage"
+            />
+
+            <h3 class="small-h3">Banking & Coverage</h3>
+
+            <p>
+              With our platform, you can speed up account onboarding and support
+              ongoing payments for checking, savings, credit card, and brokerage
+              accounts.
+            </p>
+          </li>
+
+          <li>
+            <img
+              src="./assets/home/desktop/icon-consumer-payments.svg"
+              alt="icon consumer payments"
+            />
+
+            <h3 class="small-h3">Consumer Payments</h3>
+
+            <p>
+              It’s easier to set up secure bank payments with us through a flow
+              designed with the user experience in mind. Customers could
+              instantly authenticate their account.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="demo">
+        <h2>Ready to start?</h2>
 
         <form>
           <input
@@ -63,75 +221,7 @@
             Schedule a Demo
           </button>
         </form>
-        <p>
-          Have any questions?
-          <a class="form-help links" href="./pages/contact.html">Contact Us</a>
-        </p>
-      </article>
-    </section>
-
-    <section class="parteners-container">
-      <div class="parteners-container-contain">
-        <div class="image-parteners">
-          <img src="./assets/shared/desktop/tesla.svg" alt="Tesla" />
-
-          <img src="./assets/shared/desktop/microsoft.svg" alt="Microsoft" />
-
-          <img src="./assets/shared/desktop/hewlett-packard.svg" alt="HP" />
-
-          <img src="./assets/shared/desktop/oracle.svg" alt="Oracle" />
-
-          <img src="./assets/shared/desktop/google.svg" alt="Google" />
-
-          <img src="./assets/shared/desktop/nvidia.svg" alt="Nvidia" />
-        </div>
-
-        <article class="text-parteners">
-          <h2>Who we work with</h2>
-
-          <p>
-            Today, millions of people around the world have successfully
-            connected their accounts to apps they love using our API. We provide
-            developers with the tools they need to create easy and accessible
-            experiences for their users.
-          </p>
-
-          <a class="buttons secondary-button-light" href="./pages/about.html"
-            >Learn more about us</a
-          >
-        </article>
-      </div>
-    </section>
-
-    <section class="main">
-      <section>
-        <img
-          src="./assets/home/desktop/illustration-easy-to-implement.svg"
-          alt="code qui créer un formulaire"
-        />
-
-        <h2>Easy to implement</h2>
-
-        <p>
-          Our API comes with just a few lines of code. You’ll be up and running
-          in no time. We built our documentation page to integrate payments
-          functionality with ease.
-        </p>
       </section>
-
-      <section>
-        <img
-          src="./assets/home/desktop/illustration-simple-ui.svg"
-          alt="iphone avec une transaction faites sur PayAPI"
-        />
-
-        <h2>Simple UI & UX</h2>
-
-        <p>
-          Our pre-built form is easy to integrate in your app or website’s
-          checkout flow and designed to optimize conversion.
-        </p>
-      </section>
-    </section>
+    </main>
   </body>
 </html>
