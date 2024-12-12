@@ -191,7 +191,8 @@ nav {
     width: 90%;
 }
 
-form {
+.form-hero {
+    margin: 0 auto;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -212,7 +213,7 @@ form {
     object-fit: cover;
 }
 
-#email {
+.email {
     width: 100%;
     padding: 16px 28px;
     border-radius: 24px;
@@ -369,6 +370,82 @@ form {
     }
 }
 
+.form-demo {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+
+    button {
+        cursor: pointer;
+        width: 100%;
+    }
+}
+
+footer {
+    background-color: var(--mirage-blue);
+    padding: 42px 0 56px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    width: 90%;
+}
+
+.link-container {
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+        list-style: none;
+    }
+
+    li a {
+        font-family: 'DM Serif Display', serif;
+        font-size: 14px;
+        text-decoration: none;
+        color: var(--link-water-white);
+        opacity: 0.7;
+        transition: all 0.2s ease;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+.social-media-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+
+    svg {
+        width: 24px;
+        object-fit: cover;
+    }
+
+    path {
+        transition: all 0.2s ease;
+    }
+
+    svg:hover path {
+        fill: var(--charm-pink-actives);
+    }
+}
+
 @media only screen and (min-width: 768px) {
     h1 {
         font-weight: 400;
@@ -430,10 +507,10 @@ form {
         }
     }
 
-    form {
+    .form-hero {
         position: relative;
         flex-direction: row;
-        width: 90%;
+        width: 70%;
 
         button {
             position: absolute;
@@ -442,10 +519,6 @@ form {
             width: 40%;
             height: 100%;
         }
-    }
-
-    #email {
-        width: 100%;
     }
 
     .parteners-container {
@@ -479,6 +552,43 @@ form {
             gap: 10px;
         }
     }
+
+    .form-demo {
+        position: relative;
+        flex-direction: row;
+        width: 70%;
+
+        button {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 40%;
+            height: 100%;
+        }
+    }
+
+    footer {
+        padding: 32px 0 32px 0;
+    }
+
+    .footer-container {
+        flex-direction: row;
+        align-items: center;
+        gap: 0;
+    }
+
+    .logo-footer {
+        margin-right: 64px;
+    }
+
+    .link-container {
+        margin-right: auto;
+
+        ul {
+            flex-direction: row;
+            gap: 40px;
+        }
+    }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -494,7 +604,8 @@ form {
     .hero,
     .features,
     .parteners-container-contain,
-    .demo {
+    .demo,
+    .footer-container {
         max-width: 1100px;
     }
 
@@ -530,6 +641,11 @@ form {
         flex-direction: row-reverse;
         justify-content: space-between;
         align-items: center;
+    }
+
+    .image-parteners {
+        gap: 40px 62px;
+        grid-template-columns: repeat(3, 100px);
     }
 
     .text-parteners {
@@ -590,8 +706,20 @@ form {
         }
     }
 
-    form {
+    .form-hero {
+        margin: 0 0;
+        width: 445px;
+        margin-bottom: 16px;
+    }
+
+    .form-demo {
         max-width: 445px;
-        margin-bottom: 0;
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .image-parteners {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
