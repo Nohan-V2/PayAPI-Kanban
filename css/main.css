@@ -76,6 +76,7 @@ p {
 }
 
 .buttons {
+    display: inline-block;
     font-family: "Public Sans", sans-serif;
     font-size: 14px;
     font-weight: 700;
@@ -105,7 +106,7 @@ p {
 }
 
 .secondary-button-light {
-    background-color: var(--mirage-blue);
+    background-color: transparent;
     color: var(--link-water-white);
     border: 1px solid var(--link-water-white);
     border-radius: 24px;
@@ -118,14 +119,14 @@ p {
     }
 
     &:disabled {
-        background-color: var(--mirage-blue);
+        background-color: transparent;
         color: var(--link-water-white);
         opacity: 0.5;
     }
 }
 
 .secondary-button-dark {
-    background-color: var(--link-water-white);
+    background-color: transparent;
     color: var(--san-juan-blue);
     border: 1px solid var(--san-juan-blue);
     border-radius: 24px;
@@ -138,7 +139,7 @@ p {
     }
 
     &:disabled {
-        background-color: var(--link-water-white);
+        background-color: transparent;
         color: var(--san-juan-blue);
         opacity: 0.5;
     }

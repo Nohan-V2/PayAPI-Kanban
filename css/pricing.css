@@ -1,0 +1,121 @@
+@import url(main.css);
+
+.disabled-li {
+    opacity: 0.5;
+
+    &::marker {
+        content: "";
+    }
+}
+
+.pricing {
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
+    margin-bottom: 80px;
+
+    h1,
+    h2,
+    h3 {
+        font-family: 'DM Serif Display', serif;
+    }
+
+    h1 {
+        letter-spacing: -0.25px;
+        line-height: 36px;
+        font-size: 32px;
+        margin-bottom: 48px;
+        font-weight: 400;
+    }
+
+    h2 {
+        color: var(--dark-pink);
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: -0.18px;
+        font-weight: 400;
+        margin-bottom: 80px;
+    }
+
+    h3 {
+        font-size: 56px;
+        line-height: 72px;
+        letter-spacing: -0.43px;
+        font-weight: 400;
+        margin-bottom: 24px;
+    }
+}
+
+.under-sections {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+}
+
+.Transactions,
+.Auth,
+.Identity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.pricing-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: url(../assets/shared/desktop/icon-check.svg);
+    text-align: left;
+    gap: 8px;
+    width: 100%;
+    padding: 24px 35%;
+    border-top: 1px solid var(--san-juan-blue);
+    border-bottom: 1px solid var(--san-juan-blue);
+    margin-bottom: 24px;
+
+    li {
+        font-family: "Public Sans", sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 28px;
+        color: var(--san-juan-blue);
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    .under-sections {
+        flex-direction: row;
+        gap: 30px;
+        margin-bottom: 100px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .pricing {
+        align-items: start;
+        justify-content: start;
+        text-align: left;
+    }
+
+    .Transactions,
+    .Auth,
+    .Identity {
+        align-items: start;
+        justify-content: start;
+    }
+
+    .under-sections {
+        align-items: start;
+        justify-content: start;
+    }
+
+    .pricing-list {
+        padding-left: 24px;
+    }
+
+}
