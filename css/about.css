@@ -1,0 +1,128 @@
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.about-title {
+    width: 90%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.two-container-information {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    margin: 0 auto;
+}
+
+
+.vision-and-business {
+    margin-bottom: 76px;
+}
+
+.container-contain-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    text-align: center;
+
+    h3 {
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: -0.18px;
+    }
+}
+
+.image-team {
+    margin-bottom: 48px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.team-informations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 48px;
+    text-align: center;
+    border-top: 1px solid var(--san-juan-blue);
+    border-bottom: 1px solid var(--san-juan-blue);
+
+    ul {
+        padding: 16px 0;
+        list-style: none;
+    }
+
+    li {
+        margin-bottom: 32px;
+    }
+
+    p {
+        opacity: 0.7;
+        margin-bottom: 28px;
+        color: var(--san-juan-blue);
+    }
+
+    span {
+        font-family: 'DM Serif Display', serif;
+        font-weight: 400;
+        font-size: 56px;
+        line-height: 72px;
+        letter-spacing: -0.43px;
+        color: var(--dark-pink);
+    }
+}
+
+.culture-and-people {
+    margin-bottom: 48px;
+}
+
+@media only screen and (min-width: 768px) {
+    .container-contain-information {
+        flex-direction: row;
+        align-items: start;
+        text-align: left;
+        justify-content: start;
+        gap: 0;
+
+        h3 {
+            font-size: 32px;
+            line-height: 40px;
+            letter-spacing: -0.25px;
+            margin-right: auto;
+        }
+
+        p {
+            max-width: 456px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .about-title {
+        max-width: 1100px;
+        text-align: left;
+        margin-bottom: 52px;
+    }
+
+    .two-container-information {
+        max-width: 1100px;
+    }
+
+    .container-contain-information {
+
+        p {
+            max-width: 636px;
+        }
+    }
+}
