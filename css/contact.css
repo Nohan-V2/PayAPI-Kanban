@@ -1,0 +1,97 @@
+.small-h1 {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 400;
+}
+
+form {
+    color: var(--san-juan-blue);
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    gap: 24px;
+    margin-bottom: 80px;
+
+    input {
+        outline: none;
+        padding: 0px 20px 16px 20px;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid rgba(54, 83, 107, 50%);
+        width: 100%;
+
+        &::placeholder {
+            color: var(--san-juan-blue);
+            opacity: 50%;
+        }
+    }
+
+    textarea {
+        outline: none;
+        padding: 0px 20px 64px 20px;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid rgba(54, 83, 107, 50%);
+        width: 100%;
+        resize: none;
+
+        &::placeholder {
+            color: var(--san-juan-blue);
+            opacity: 50%;
+        }
+    }
+
+    button {
+        max-width: 152px;
+        cursor: pointer;
+
+    }
+}
+
+.policy-confident {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+
+    input {
+        width: 24px;
+        height: 24px;
+        object-fit: cover;
+
+        &:checked {
+            background-color: rgba(54, 83, 107, 25%);
+        }
+    }
+
+    label {
+        max-width: 276px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 25px;
+        letter-spacing: -0.12px;
+    }
+}
+
+.contact-parteners-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 32px;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+.image-parteners {
+    svg {
+        justify-self: center;
+        align-self: center;
+        max-width: none;
+        object-fit: cover;
+    }
+}

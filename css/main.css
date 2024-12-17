@@ -265,6 +265,8 @@ nav {
     img {
         justify-self: center;
         align-self: center;
+        max-width: none;
+        object-fit: cover;
     }
 }
 
@@ -711,7 +713,6 @@ footer {
 
     .image-parteners {
         gap: 40px 62px;
-        grid-template-columns: repeat(3, 100px);
     }
 
     .text-parteners {
@@ -781,11 +782,5 @@ footer {
     .form-demo {
         max-width: 445px;
         margin: 0;
-    }
-}
-
-@media only screen and (min-width: 1200px) {
-    .image-parteners {
-        grid-template-columns: repeat(3, 1fr);
     }
 }
