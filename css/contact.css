@@ -7,7 +7,6 @@
 }
 
 form {
-    color: var(--san-juan-blue);
     display: flex;
     flex-direction: column;
     width: 90%;
@@ -15,36 +14,56 @@ form {
     gap: 24px;
     margin-bottom: 80px;
 
-    input {
+    input:not(input[type="checkbox"]) {
+        color: var(--san-juan-blue);
         outline: none;
         padding: 0px 20px 16px 20px;
         background-color: transparent;
         border: none;
-        border-bottom: 1px solid rgba(54, 83, 107, 50%);
+        border-bottom: 1px solid var(--san-juan-blue);
+        opacity: 0.5;
         width: 100%;
+
+        &:focus {
+            opacity: 1;
+        }
 
         &::placeholder {
             color: var(--san-juan-blue);
             opacity: 50%;
+
+            &:focus {
+                opacity: 1;
+            }
         }
     }
 
     textarea {
+        color: var(--san-juan-blue);
         outline: none;
         padding: 0px 20px 64px 20px;
         background-color: transparent;
         border: none;
-        border-bottom: 1px solid rgba(54, 83, 107, 50%);
+        border-bottom: 1px solid var(--san-juan-blue);
+        opacity: 50%;
         width: 100%;
         resize: none;
+
+        &:focus {
+            opacity: 1;
+        }
 
         &::placeholder {
             color: var(--san-juan-blue);
             opacity: 50%;
+
+            &:focus {
+                opacity: 1;
+            }
         }
     }
 
-    button {
+    .bouton-contact-form {
         max-width: 152px;
         cursor: pointer;
 
@@ -57,12 +76,29 @@ form {
     gap: 26px;
 
     input {
+        user-select: none;
+        appearance: none;
         width: 24px;
         height: 24px;
-        object-fit: cover;
+        background-color: var(--san-juan-blue);
+        opacity: 0.25;
 
         &:checked {
-            background-color: rgba(54, 83, 107, 25%);
+            margin: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--dark-pink);
+            opacity: 1;
+
+            &:before {
+                content: url(../assets/shared/desktop/icon-check.svg);
+                color: #FFF;
+            }
+        }
+
+        &:disabled {
+            opacity: 0.05;
         }
     }
 
@@ -88,10 +124,11 @@ form {
 }
 
 .image-parteners {
+
     svg {
         justify-self: center;
         align-self: center;
-        max-width: none;
         object-fit: cover;
+        max-width: none;
     }
 }
