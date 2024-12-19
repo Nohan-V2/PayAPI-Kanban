@@ -6,7 +6,7 @@
     font-weight: 400;
 }
 
-form {
+.contact-form {
     display: flex;
     flex-direction: column;
     width: 90%;
@@ -17,7 +17,7 @@ form {
     input:not(input[type="checkbox"]) {
         color: var(--san-juan-blue);
         outline: none;
-        padding: 0px 20px 16px 20px;
+        padding: 16px 20px;
         background-color: transparent;
         border: none;
         border-bottom: 1px solid var(--san-juan-blue);
@@ -41,7 +41,7 @@ form {
     textarea {
         color: var(--san-juan-blue);
         outline: none;
-        padding: 0px 20px 64px 20px;
+        padding: 16px 20px;
         background-color: transparent;
         border: none;
         border-bottom: 1px solid var(--san-juan-blue);
@@ -76,7 +76,7 @@ form {
     gap: 26px;
 
     input {
-        user-select: none;
+        display: block;
         appearance: none;
         width: 24px;
         height: 24px;
@@ -103,7 +103,6 @@ form {
     }
 
     label {
-        max-width: 276px;
         font-size: 16px;
         font-weight: 400;
         line-height: 25px;
@@ -124,11 +123,45 @@ form {
 }
 
 .image-parteners {
-
     svg {
         justify-self: center;
         align-self: center;
         object-fit: cover;
         max-width: none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .small-h1 {
+        width: 75%;
+    }
+
+    .contact-form {
+        width: 75%;
+    }
+
+    .contact-parteners-container {
+        width: 75%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .small-h1 {
+        width: 100%;
+        max-width: 1100px;
+        text-align: left;
+    }
+
+    .contact-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 124px;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    .contact-parteners-container {
+        text-align: left;
     }
 }
