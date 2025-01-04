@@ -93,7 +93,7 @@
             opacity: 1;
 
             &:before {
-                content: url(../assets/shared/desktop/icon-check.svg);
+                content: url(../assets/shared/desktop/icon-checkbox.svg);
                 color: #FFF;
             }
         }
